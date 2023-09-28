@@ -1,0 +1,28 @@
+$primary: #7749F8;
+$secondary: #54595E;
+$light: #ffffff;
+
+h1 {
+    font-size: 40px !important;
+}
+
+h2 {
+    font-size: 28px !important;
+}
+
+h1, h2, h3 {
+    font-weight: bold !important;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+a.btn.btn-light {
+    transition: all .2s ease-in-out;
+    &:hover {
+        background-color: #ffffff !important;
+        opacity: 0.9;
+    }
+}
