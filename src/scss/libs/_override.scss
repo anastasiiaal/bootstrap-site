@@ -1,6 +1,7 @@
 $primary: #7749F8;
 $secondary: #54595E;
 $light: #ffffff;
+$success: #28A745;
 
 h1 {
     font-size: 40px !important;
@@ -8,6 +9,11 @@ h1 {
 
 h2 {
     font-size: 28px !important;
+}
+
+h4 {
+    font-size: 16px !important;
+    font-weight: bold !important;
 }
 
 h1, h2, h3 {
