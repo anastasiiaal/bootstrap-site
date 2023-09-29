@@ -2,6 +2,37 @@ body {
     font-family: Inter, sans-serif;
 }
 
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 40px !important;
+}
+
+h2 {
+    font-size: 28px !important;
+}
+
+h4 {
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+
+h1, h2, h3 {
+    font-weight: bold !important;
+}
+
+a.btn.btn-light {
+    transition: all .2s ease-in-out;
+    
+    &:hover {
+        background-color: #ffffff !important;
+        opacity: 0.9;
+    }
+}
+
 footer {
     padding: 50px;
 
