@@ -30,7 +30,7 @@
         </div>
       </div>
     </nav>
-    <div class="hero">
+    <div class="hero" id="hero">
       <div class="container py-5">
         <div class="row d-flex align-items-center">
           <div class="col px-5 text-white">
@@ -50,10 +50,9 @@
   </section>
 
   <main>
-    <section>
+    <section id="catalog-books">
       <div class="container">
         <h2 class="text-center text-secondary mb-4">Consultez les classiques</h2>
-
         <div class="row mb-4">
           <div class="col-md-8 offset-md-2">
             <div class="input-group">
@@ -85,29 +84,105 @@
           </div>
         </div>
 
+        <div class="books-wrapper mt-4 mb-5 mb-md-3">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 d-flex justify-content-between">
+            <div class="col">
+              <div class="book-card mb-4 mb-md-5">
+                <span class="badge bg-primary-subtle text-primary">Best seller</span>
+                <img src="./public/livre.png" alt="Les Fleurs du mal">
+                <div class="book-card_info">
+                  <h3 class="author">Baudelaire</h3>
+                  <p>Les Fleurs du mal</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="book-card mb-4 mb-md-5">
+                <span class="badge d-none d-md-block bg-primary-subtle text-primary">Best seller</span>
+                <img src="./public/livre.png" alt="Les Fleurs du mal">
+                <div class="book-card_info">
+                  <h3 class="author">Baudelaire</h3>
+                  <p>Les Fleurs du mal</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="book-card mb-4 mb-md-5">
+                <span class="badge rounded-pill text-bg-danger">Rupture de stock</span>
+                <img src="./public/livre.png" alt="Les Fleurs du mal">
+                <div class="book-card_info">
+                  <h3 class="author">Baudelaire</h3>
+                  <p>Les Fleurs du mal</p>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-md-block">
+              <div class="book-card mb-4 mb-md-5">
+                <img src="./public/livre.png" alt="Les Fleurs du mal">
+                <div class="book-card_info">
+                  <h3 class="author">Baudelaire</h3>
+                  <p>Les Fleurs du mal</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div class="books-wrapper">
-
+          <div class="row d-none d-md-flex row-cols-md-2 row-cols-lg-4 justify-content-between">
+            <div class="col">
+              <div class="book-card mb-4 mb-md-5">
+                <img src="./public/livre.png" alt="Les Fleurs du mal">
+                <div class="book-card_info">
+                  <h3 class="author">Baudelaire</h3>
+                  <p>Les Fleurs du mal</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="book-card mb-4 mb-md-5">
+                <img src="./public/livre.png" alt="Les Fleurs du mal">
+                <div class="book-card_info">
+                  <h3 class="author">Baudelaire</h3>
+                  <p>Les Fleurs du mal</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="book-card mb-4 mb-md-5">
+                <img src="./public/livre.png" alt="Les Fleurs du mal">
+                <div class="book-card_info">
+                  <h3 class="author">Baudelaire</h3>
+                  <p>Les Fleurs du mal</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="book-card mb-4 mb-md-5">
+                <img src="./public/livre.png" alt="Les Fleurs du mal">
+                <div class="book-card_info">
+                  <h3 class="author">Baudelaire</h3>
+                  <p>Les Fleurs du mal</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- <nav> -->
-        <ul class="pagination flex justify-content-center">
+        <ul class="pagination flex justify-content-center gap-3">
           <li class="page-item active" aria-current="page">
-            <span class="page-link">1</span>
+            <span class="page-link rounded-1">1</span>
           </li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link text-secondary rounded-1" href="#">2</a></li>
+          <li class="page-item"><a class="page-link text-secondary rounded-1" href="#">3</a></li>
+          <li class="page-item"><a class="page-link text-secondary rounded-1" href="#">4</a></li>
         </ul>
-        <!-- </nav> -->
       </div>
     </section>
 
-    <section class="bg-primary">
+    <section class="bg-primary" id="bestseller">
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-md-6 px-5 text-center">
-            <img src="./public/livre.png" alt="Livres">
+            <img src="./public/livre.png" alt="Les Fleurs du mal">
           </div>
           <div class="col-12 col-md-6 px-5 text-white text-center text-md-start pt-5 pt-md-0">
             <h1>Notre best seller</h1>
@@ -121,50 +196,54 @@
       </div>
     </section>
 
-    <section>
+    <section id="top-ventes">
       <div class="container">
         <h2 class="text-center text-secondary mb-4">Top des ventes</h2>
-        <table class="table table-borderless">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Nom</th>
-              <th scope="col" class="d-none d-md-block">Date de sortie</th>
-              <th scope="col">Disponibilité</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Les Fleurs du mal</td>
-              <td class="d-none d-md-block">21/12/2021</td>
-              <td>
-                <span class="badge rounded-pill text-bg-success text-white">Disponible</span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Voyage au bout de la nuit</td>
-              <td class="d-none d-md-block">12/08/2020</td>
-              <td>
-                <span class="badge rounded-pill text-bg-danger">Rupture</span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Don Quichotte</td>
-              <td class="d-none d-md-block">05/02/2016</td>
-              <td>
-                <span class="badge rounded-pill text-bg-success text-white">Disponible</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="row">
+          <div class="col col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nom</th>
+                  <th scope="col" class="d-none d-md-block">Date de sortie</th>
+                  <th scope="col">Disponibilité</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Les Fleurs du mal</td>
+                  <td class="d-none d-md-block">21/12/2021</td>
+                  <td>
+                    <span class="badge rounded-pill text-bg-success text-white">Disponible</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Voyage au bout de la nuit</td>
+                  <td class="d-none d-md-block">12/08/2020</td>
+                  <td>
+                    <span class="badge rounded-pill text-bg-danger">Rupture</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Don Quichotte</td>
+                  <td class="d-none d-md-block">05/02/2016</td>
+                  <td>
+                    <span class="badge rounded-pill text-bg-success text-white">Disponible</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-primary text-white">
+  <footer class="bg-primary text-white" id="footer">
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-3 g-md-5">
         <div class="col">

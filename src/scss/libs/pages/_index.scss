@@ -1,10 +1,35 @@
-.books-wrapper {
-    height: 200px;
-    padding: 50px;
-    background-color: $primary;
-}
-
 .alert svg {
     margin-inline: 8px;
     margin-top: -4px;
+}
+
+.books-wrapper {
+    .book-card {
+        max-width: max-content;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        position: relative;
+
+        span.badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        img {
+            height: 265px;
+            // aspect-ratio: 35/53;
+            margin-bottom: 15px;
+        }
+
+        &_info {
+            width: 100%;
+        }
+    }
+}
+
+h3.author {
+    font-size: 16px;
+    margin: 0;
 }
